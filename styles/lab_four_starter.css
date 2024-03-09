@@ -1,4 +1,4 @@
-.remove-assignment-content {
+/*.remove-assignment-content {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
   text-align: center;
@@ -6,12 +6,23 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+}*/
 
 .hero-container {
-  background-color: #403d58;
-  color: #fff;
+  display: flex;
+  background: url(/assets/turntable.jpg);
+  background-size: cover;
   height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-container h1 {
+  display: flex;
+  font-family: "Imbue", serif;
+  color: #ffffff;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-size: 13vw;
 }
 
 .content-container {
