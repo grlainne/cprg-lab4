@@ -1,4 +1,5 @@
-/*.remove-assignment-content {
+/*
+.remove-assignment-content {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
   text-align: center;
@@ -6,34 +7,80 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}*/
+}
+*/
 
+/*Hero Background Image with parralax scroll*/
 .hero-container {
   display: flex;
   background: url(/assets/turntable.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
 }
 
+/*H1 font, size, and inverted stylings*/
 .hero-container h1 {
-  display: flex;
   font-family: "Imbue", serif;
-  color: #ffffff;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  font-size: 13vw;
+  color: rgb(255, 255, 255);
+  mix-blend-mode: difference;
+  font-size: 10vw;
 }
 
+/*Content Section*/
 .content-container {
-  background-color: #dbd56e;
-  height: 600px;
+  display: flex;
+  min-height: 25vh;
 }
 
+.content-container h1 {
+  color: black;
+  font-family: "Imbue", serif;
+}
+
+.content-container p {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.vinyl-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+}
+
+.record {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  animation: rotation 3s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*Accordion Section*/
 .accordion-container {
-  background-color: #fc7753;
-  color: #fff;
-  height: 600px;
+  display: flex;
+  color:black;
+  min-height: 25vh;
+}
+
+.accordion-container h1 {
+  color: black;
+  font-family: "Imbue", serif;
 }
 
 .footer-container {

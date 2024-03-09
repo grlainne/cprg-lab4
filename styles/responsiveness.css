@@ -1,0 +1,32 @@
+.content-container {
+    display: flex;
+}
+
+.hero-container {
+    width: 100%;
+}
+
+/*Responsiveness for Mobile*/
+@media screen and (max-width:768px) {
+    .content-container {
+        flex-direction: column;
+    }
+    .vinyl img {
+        width: 90%;
+    }
+}
+
+/*Responsiveness for Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .content-container {
+        flex-direction: column;
+    }
+    .vinyl img {
+        width: 50%;
+    }
+}
+
+/*Responsiveness for Web Browser*/
+@media screen and (min-width: 1200px) {
+
+}
