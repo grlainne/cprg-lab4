@@ -2,6 +2,7 @@
 #ebeae3
 #f3f3eb
 #919189
+#e894b6
 */
 
 body {
@@ -75,7 +76,7 @@ button:focus {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  background-color: #ebeae3;
+  background-color: #e894b6;
   width: 150px;
   transition: 0.2s;
 }
@@ -112,23 +113,62 @@ button:focus {
   transition: 0.4s;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
+.accordion:active {
+  background-color: #ebeae3
+}
+
+.accordion:hover {
   background-color: #919189;
 }
 
-/* Style the accordion panel. Note: hidden by default */
 .panel {
   padding: 0 18px;
-  background-color: #ebeae3;
+  background-color: #f3f3eb;
   max-height: 0;
   overflow: hidden;
   transition: 0.2s ease-out;
 }
 
+/*Footer Section*/
 .footer-container {
+  display: flex;
   background-color: #ebeae3;
   width: 100%;
-  height: 300px;
+  height: 40vh;
   position: relative;
+}
+
+a:link { 
+  text-decoration: none; 
+} 
+
+.footer-links {
+  padding: 50px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+
+.footer-links a {
+  font-weight: 500;
+  font-size:larger;
+  color: #e894b6;
+}
+
+.footer-links a:hover {
+  color: #919189;
+}
+
+.footer-container iframe{
+  display: flex;
+  margin: auto;
+  max-height: 30vh;
+  max-width: 100vh;
+}
+
+.cc {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  padding: 1rem;
 }

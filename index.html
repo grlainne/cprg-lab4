@@ -40,6 +40,7 @@
         </button>
     </div>
 
+<!--JS for song play+pause-->
     <script>
       var aud = document.getElementById("song").children[0];
       var isPlaying = false;
@@ -54,29 +55,25 @@
         isPlaying = !isPlaying;
       }
     </script>
-
   </section>
 
+<!--Accordion Section-->
   <section class="container accordion-container">
-
     <h1>Vinyl Record Facts</h1>
-
-    <button class="accordion">Fact One</button>
+    <button class="accordion">Fact 1: The Most Expensive Vinyl Record</button>
     <div class="panel">
-      <p>Lorem ipsum...</p>
+      <p>The most expensive vinyl record in existence is the only copy of The Wu-Tang-Clan's 7th studio album, Once Upon a Time in Shaolin. In 2021, It was sold by the US government to a collective called PleasrDAO for $4 million.</p>
     </div>
-    
-    <button class="accordion">Fact Two</button>
+    <button class="accordion">Fact 2: Who Invented this Technology?</button>
     <div class="panel">
-      <p>Lorem ipsum...</p>
+      <p>The phonograph was invented back in 1877 by Thomas Edison.</p>
     </div>
-    
-    <button class="accordion">Fact Three</button>
+    <button class="accordion">Fact 3: Music for Aliens?</button>
     <div class="panel">
-      <p>Lorem ipsum...</p>
+      <p>On the Voyager Spacecraft, there is a record there for Aliens to listen to.</p>
     </div>
   
-    <!--JS for Accordion-->
+<!--JS for Accordion-->
     <script>
       var acc = document.getElementsByClassName("accordion");
       var i;
@@ -95,9 +92,21 @@
       </script>
   </section>
 
-  <section class="footer-container">
-    <div class="fontsnstuff">
-      <h1>Footer</h1>
+  <!--Footer Section-->
+  <footer class="footer-container">
+    <div class="footer-links">
+      <ul>
+        <h1>Links</h1>
+        <li><a href="#store">Store</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#number">333-333-3333</a></li>
+      </ul>
     </div>
-  </section>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191100.63794658487!2d-114.39323088568403!3d51.00002778557735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716f9268a69e81%3A0xb1db5e68bd61e28!2sSouthern%20Alberta%20Institute%20of%20Technology!5e0!3m2!1sen!2sca!4v1710042334826!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+      <div class="cc">
+        <span id="year"></span></p>
+        <script>let currentYear = new Date().getFullYear();
+          document.getElementById("year").innerText = `© ${currentYear} Gail Salinas`;</script>
+    </div>
 </body>

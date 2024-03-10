@@ -4,6 +4,7 @@
 
 .hero-container {
     width: 100%;
+    min-height: 100vh;
 }
 
 /*Responsiveness for Mobile*/
@@ -13,6 +14,14 @@
     }
     .vinyl img {
         width: 75%;
+    }
+    .footer-container iframe {
+        max-width: 100vw
+    }
+    .footer-container {
+        min-height: 50vh;
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -24,9 +33,4 @@
     .vinyl img {
         width: 50%;
     }
-}
-
-/*Responsiveness for Web Browser*/
-@media screen and (min-width: 1200px) {
-
 }
