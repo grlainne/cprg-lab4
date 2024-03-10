@@ -1,8 +1,5 @@
 /*Responsiveness for Mobile*/
 @media screen and (max-width:768px) {
-    .hero-container {
-        max-height: 100vh;
-    }
     .content-container {
         flex-direction: column;
     }
