@@ -1,6 +1,7 @@
 /*Responsiveness for Mobile*/
 @media screen and (max-width:768px) {
     .hero-container {
+        background-size: contain;
         max-width: 100vh;
     }
     .content-container {
