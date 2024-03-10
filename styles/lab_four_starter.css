@@ -16,6 +16,7 @@ button:focus {
 /*Hero Background Image with parralax scroll*/
 .hero-container {
   display: flex;
+  flex-direction: column;
   background: url(../assets/turntable.jpg);
   background-attachment: fixed;
   background-position: center;
@@ -32,6 +33,15 @@ button:focus {
   color: rgb(255, 255, 255);
   mix-blend-mode: difference;
   font-size: 10vw;
+}
+
+.hero-container h2 {
+  font-size: 2vw;
+  max-width: 50vw;        
+  text-align: center;
+  background-color: #f3f3eb;
+  padding: 30px;
+  border-radius: 40px;  
 }
 
 /*Content Section*/
