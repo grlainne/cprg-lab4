@@ -8,9 +8,8 @@ body {
   background-color: #f3f3eb;
 }
 
-button
-{
-    outline: 0 none;
+button:focus {
+  outline: none;
 }
 
 /*Hero Background Image with parralax scroll*/
