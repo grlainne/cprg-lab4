@@ -14,7 +14,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/js" href="/java/main.js">
   <link rel="stylesheet" type="text/css" href="/styles/responsiveness.css">
   <title>The Audiophile Lounge</title>
 </head>
@@ -32,11 +31,69 @@
       <h1>What's a vinyl record?</h1>
         <p>Vinyl records were first introduced in the late 19th century but gained significant popularity in the mid-20th century, particularly from the 1950s through the 1980s. They come in various sizes, with the most common being 12 inches in diameter for LPs (long-playing records) and 7 inches for singles.</p>
         <p>Vinyl records have grooves engraved on both sides that contain analog sound information. A stylus, or needle, is used to track these grooves, converting the physical movements into electrical signals that can be amplified and played through speakers.</p>
+        <button id="song" onClick="playPause()">
+          <audio
+            src="/assets/Nocturne in E flat major, Op. 9 no. 2.mp3"
+            autoplay
+            loop
+          ></audio>
+          Song
+        </button>
     </div>
+    
+    <script>
+      var aud = document.getElementById("song").children[0];
+      var isPlaying = false;
+      aud.pause();
+    
+      function playPause() {
+        if (isPlaying) {
+          aud.pause();
+        } else {
+          aud.play();
+        }
+        isPlaying = !isPlaying;
+      }
+    </script>
+
   </section>
 
   <section class="container accordion-container">
-      <h1>Accordion</h1>
+
+    <h1>Bleh</h1>
+
+    <button class="accordion">Section 1</button>
+    <div class="panel">
+      <p>Lorem ipsum...</p>
+    </div>
+    
+    <button class="accordion">Section 2</button>
+    <div class="panel">
+      <p>Lorem ipsum...</p>
+    </div>
+    
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+      <p>Lorem ipsum...</p>
+    </div>
+  
+    <!--JS for Accordion-->
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+      </script>
   </section>
 
   <section class="footer-container">
