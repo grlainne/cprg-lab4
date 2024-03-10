@@ -1,3 +1,13 @@
+/*Unrelated, for personal reference
+#ebeae3
+#f3f3eb
+#919189
+*/
+
+body {
+  background-color: #f3f3eb;
+}
+
 /*Hero Background Image with parralax scroll*/
 .hero-container {
   display: flex;
@@ -21,32 +31,24 @@
 
 /*Content Section*/
 .content-container {
+  margin: auto;
+  margin-top: 50px;
   display: flex;
   min-height: 15vh;
 }
 
-.content-container h1 {
-  color: black;
-  font-family: "Imbue", serif;
-}
-
-.content-container p {
-  color: black;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-}
-
 .vinyl-text {
+  padding: 30px;
   display: flex;
   flex-direction: column;
-  margin-left: 5%;
 }
 
+/*Vinyl record image + animation*/
 .record {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 500px;
+  display: flex;
+  margin: auto;
+  margin-bottom: 50px;
+  width: 400px;
   animation: rotation 3s infinite linear;
 }
 
@@ -59,28 +61,42 @@
   }
 }
 
+/*Stylings for the "Play Me" Button*/
+.songbutton {
+  font-family: "Montserrat", sans-serif;
+  border-radius: 40px;
+  box-shadow: 0px 5px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ebeae3;
+  width: 150px;
+  transition: 0.2s;
+}
+
+.songbutton:hover {
+  background-color: #919189;
+}
+
+.songbutton:active {
+  box-shadow: 0 3px #000000;
+  transform: translateY(5px);
+}
+
 /*Accordion Section*/
 .accordion-container {
   display: flex;
+  padding: 50px;
   flex-direction: column;
+  margin-top: -50px;
   color:black;
   min-height: 25vh;
 }
 
-.accordion-container h1 {
-  color: black;
-  font-family: "Imbue", serif;
-}
-
-.accordion-container p {
-  color: black;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-}
-
 .accordion {
-  background-color: #eee;
-  color: #444;
+  font-family: "Montserrat", sans-serif;
+  background-color: #ebeae3;
+  color: black;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -92,20 +108,20 @@
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
-  background-color: #ccc;
+  background-color: #919189;
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
   padding: 0 18px;
-  background-color: white;
+  background-color: #ebeae3;
   max-height: 0;
   overflow: hidden;
   transition: 0.2s ease-out;
 }
 
 .footer-container {
-  background-color: #f2efea;
+  background-color: #ebeae3;
   width: 100%;
   height: 300px;
   position: relative;

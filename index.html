@@ -25,22 +25,21 @@
 
   <section class="container content-container">
     <div class="vinyl img">
-      <img src="/assets/vinyl record.jpg" class="record" alt="7 Inch Vinyl Record">
+      <img src="/assets/vinyl record.png" class="record" alt="7 Inch Vinyl Record">
     </div>
     <div class="vinyl-text">
       <h1>What's a vinyl record?</h1>
         <p>Vinyl records were first introduced in the late 19th century but gained significant popularity in the mid-20th century, particularly from the 1950s through the 1980s. They come in various sizes, with the most common being 12 inches in diameter for LPs (long-playing records) and 7 inches for singles.</p>
         <p>Vinyl records have grooves engraved on both sides that contain analog sound information. A stylus, or needle, is used to track these grooves, converting the physical movements into electrical signals that can be amplified and played through speakers.</p>
-        <button id="song" onClick="playPause()">
+        <button id="song" class="songbutton" onClick="playPause()">
           <audio
             src="/assets/Nocturne in E flat major, Op. 9 no. 2.mp3"
             autoplay
             loop
-          ></audio>
-          Song
+          ></audio> Play Me
         </button>
     </div>
-    
+
     <script>
       var aud = document.getElementById("song").children[0];
       var isPlaying = false;
@@ -60,19 +59,19 @@
 
   <section class="container accordion-container">
 
-    <h1>Bleh</h1>
+    <h1>Vinyl Record Facts</h1>
 
-    <button class="accordion">Section 1</button>
+    <button class="accordion">Fact One</button>
     <div class="panel">
       <p>Lorem ipsum...</p>
     </div>
     
-    <button class="accordion">Section 2</button>
+    <button class="accordion">Fact Two</button>
     <div class="panel">
       <p>Lorem ipsum...</p>
     </div>
     
-    <button class="accordion">Section 3</button>
+    <button class="accordion">Fact Three</button>
     <div class="panel">
       <p>Lorem ipsum...</p>
     </div>
