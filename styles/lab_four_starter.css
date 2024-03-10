@@ -16,7 +16,6 @@ button:focus {
 .hero-container {
   display: flex;
   background: url(../assets/turntable.jpg);
-  color: #fff;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
