@@ -8,6 +8,11 @@ body {
   background-color: #f3f3eb;
 }
 
+button
+{
+    outline: 0 none;
+}
+
 /*Hero Background Image with parralax scroll*/
 .hero-container {
   display: flex;
